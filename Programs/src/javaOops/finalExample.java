@@ -1,7 +1,7 @@
 package javaOops;
 
 public class finalExample {
-	public final void display(String a) {
+	public void display(String a) { //public final void display(String a) - If I use final method it throws an error because final method cannot overridden
 		System.out.println(a);
 	}
 }
@@ -13,4 +13,4 @@ public static void main(String[] args) {
 	sample ob = new sample();
 	ob.display("Try ME");
 	}
-}`
+}

@@ -1,20 +1,19 @@
 package javaOops;
-
 public class constructorExample {
-	int id;
-	String name;
-	Student(int id, String name){
-		stdid = id;
-		stdname = name;
-	}
-	public void studentDelatils{
-		System.out.println("StudentID Id : "+stdid);
-		System.out.println("Student Name : " stdname);
-	}
-
-	public static void main(String[] args) {
-		constructor c1 = new constructor();
-		c1.constructor(); 
-	}
-
+    int id;
+    String name;
+    // Constructor
+    constructorExample(int id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+    // Method to display student details
+    public void studentDetails() {
+        System.out.println("Student ID : " + id);
+        System.out.println("Student Name : " + name);
+    }
+    public static void main(String[] args) {
+        constructorExample c1 = new constructorExample(101, "Reshma");
+        c1.studentDetails();
+    }
 }
